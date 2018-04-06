@@ -1,0 +1,32 @@
+@import 'palette';
+
+body {
+    height:100%;
+    width: 100%;
+    padding-top: 30px;  /* To Account for fixed navbar  */
+}
+
+.spacing-lg{
+    margin-bottom: 15%;
+}
+.spacing-md{
+    margin-bottom: 10%;
+}
+
+.btn-square {
+    background: $color1;
+	border-color:transparent;
+	border-radius:0px;
+	border-width: 2px;
+	text-decoration: none;
+	/* transition: 0.5s; */
+}
+
+.bar{
+	height:3px;
+    width:30px;
+	background-color: $color1;
+}
+.centre{
+    margin: auto;
+}

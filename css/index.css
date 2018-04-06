@@ -1,0 +1,35 @@
+/* Coolors Exported Palette - coolors.co/33658a-86bbd8-2f4858-f6ae2d-f26419 */
+/* RGB */
+body {
+  height: 100%;
+  width: 100%;
+  padding-top: 30px;
+  /* To Account for fixed navbar  */
+}
+
+.spacing-lg {
+  margin-bottom: 15%;
+}
+
+.spacing-md {
+  margin-bottom: 10%;
+}
+
+.btn-square {
+  background: #33658a;
+  border-color: transparent;
+  border-radius: 0px;
+  border-width: 2px;
+  text-decoration: none;
+  /* transition: 0.5s; */
+}
+
+.bar {
+  height: 3px;
+  width: 30px;
+  background-color: #33658a;
+}
+
+.centre {
+  margin: auto;
+}
