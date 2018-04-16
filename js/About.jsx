@@ -3,15 +3,17 @@ import React from 'react';
 class About extends React.Component {
     render() {
         return (
-            <div className="container-fluid">
+            <div className="container">
                 <div className="text-center "> 
                     <div>
                         <h1>About Me</h1>
+                        <div className = "spacing-sm"></div>
                         <div className="bar centre"></div>
                     </div>
                 </div>
+                <div className = "spacing-lg"></div>
                 <div className="row">
-                    <div className="col-lg-5 col-xs-5 col-md-5 col-sm-5">
+                    <div className="col">
                         <div className="media">
                             <div className="media-left">
                                 <img className="media-object" src="..." alt="..."/>
@@ -21,7 +23,7 @@ class About extends React.Component {
                             </div>
                             </div>
                         </div>
-                    <div className="col-lg-7 col-xs-7 col-md-7 col-sm-7">
+                    <div className="col">
                         <p>
                             About Me Placeholder paragraph
                         </p>

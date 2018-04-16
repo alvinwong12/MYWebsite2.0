@@ -1,7 +1,13 @@
+var HTMLWebpackPlugin = require('html-webpack-plugin');
+var HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
+	template: __dirname + '/index.html',
+	filename: 'index.html',
+	inject: 'body'
+});
 var config = {
    entry: './js/main.js',
    output: {
-      path:'/build',
+      path: __dirname + "/build",
       filename: 'index.js',
    },
    devServer: {
@@ -12,11 +18,15 @@ var config = {
       loaders: [
          {
             test: /\.jsx?$/,
-            exclude: /node_modules/,
+            exclude: ['/node_modules/' , '/server.js/'],
             loader: 'babel-loader',
             query: {
                presets: ['es2016', 'react']
             }
+         },
+         {
+            test: /\.css$/,
+            loaders: ['css?modules']
          }
       ]
    }

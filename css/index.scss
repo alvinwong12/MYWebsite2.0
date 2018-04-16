@@ -3,14 +3,17 @@
 body {
     height:100%;
     width: 100%;
-    padding-top: 30px;  /* To Account for fixed navbar  */
+    padding-top: 56px;  /* To Account for fixed navbar  */
 }
 
 .spacing-lg{
-    margin-bottom: 15%;
+    margin-bottom: 5%;
 }
 .spacing-md{
-    margin-bottom: 10%;
+    margin-bottom: 3%;
+}
+.spacing-sm{
+    margin-bottom: 1%;
 }
 
 .btn-square {
@@ -29,4 +32,15 @@ body {
 }
 .centre{
     margin: auto;
+}
+
+.footer {
+    text-align: center;
+}
+.inline-icon{
+    display: inline;
+}
+
+.icon-link {
+    text-decoration: none;
 }
