@@ -18,7 +18,7 @@ var config = {
        loaders: [
           {
              test: /\.jsx?$/,
-             exclude: ['/node_modules/'],
+             exclude: ['/node_modules/', '/server.js/', '/animate.js/'],
              loader: 'babel-loader',
              query: {
                 presets: ['es2016', 'react']

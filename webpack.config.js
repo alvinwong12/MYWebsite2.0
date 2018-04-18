@@ -18,7 +18,7 @@ var config = {
       loaders: [
          {
             test: /\.jsx?$/,
-            exclude: ['/node_modules/' , '/server.js/'],
+            exclude: ['/node_modules/' , '/server.js/', '/animate.js/'],
             loader: 'babel-loader'
          },
          {

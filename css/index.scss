@@ -6,6 +6,7 @@ body {
     height:100%;
     width: 100%;
     padding-top: 56px;  /* To Account for fixed navbar  */
+    position: relative; 
 }
 
 .spacing-lg{
@@ -30,7 +31,7 @@ body {
 .bar{
 	height:3px;
     width:30px;
-	background-color: $color1;
+	background-color: $color2;
 }
 .centre{
     margin: auto;
@@ -46,14 +47,21 @@ body {
 
 .icon-link {
     text-decoration: none;
+    color: black;
 }
 
 .section{
-    padding: 1rem 0rem;
+    padding: 5rem 0rem;
 }
 .section-header {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
+    color: $color3;
+}
+
+.section-subheader{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 .section-bg-light{

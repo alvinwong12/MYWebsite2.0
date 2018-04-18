@@ -7669,15 +7669,15 @@ class Navbar extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     render() {
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             "nav",
-            { className: "navbar navbar-expand-lg navbar-light bg-light fixed-top" },
+            { className: "navbar navbar-expand-lg navbar-light bg-light fixed-top", id: "main-navbar" },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 "button",
-                { className: "navbar-toggler", type: "button", "data-toggle": "collapse", "data-target": "#main-navbar", "aria-controls": "main-navbar", "aria-expanded": "false", "aria-label": "Toggle navigation" },
+                { className: "navbar-toggler", type: "button", "data-toggle": "collapse", "data-target": "#navbar-items", "aria-controls": "main-navbar", "aria-expanded": "false", "aria-label": "Toggle navigation" },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", { className: "navbar-toggler-icon" })
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 "div",
-                { className: "collapse navbar-collapse", id: "main-navbar" },
+                { className: "collapse navbar-collapse", id: "navbar-items" },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     "ul",
                     { className: "navbar-nav mr-auto" },
@@ -7701,7 +7701,7 @@ class Navbar extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         "li",
-                        { className: "nev-item" },
+                        { className: "nav-item" },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             "a",
                             { href: "#projects", className: "nav-link" },
@@ -7827,8 +7827,8 @@ class About extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                     null,
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         "h1",
-                        null,
-                        "About Me"
+                        { className: "section-header" },
+                        "ABOUT ME"
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "spacing-sm" }),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "bar centre" })
@@ -7895,8 +7895,8 @@ class Projects extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                 { className: "text-center " },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     "h1",
-                    null,
-                    "Projects"
+                    { className: "section-header" },
+                    "PROJECTS"
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "spacing-sm" }),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "bar centre" })
@@ -7930,9 +7930,9 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
             "div",
             { className: "container" },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "h1",
-                { className: "text-center" },
-                "Contact Me"
+                "p",
+                { className: "text-center section-header h1" },
+                "CONTACT"
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "spacing-sm" }),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "bar centre" }),
@@ -7957,7 +7957,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         "p",
-                        null,
+                        { className: "section-subheader h3" },
                         "SOCIAL MEDIA"
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { id: "fb-icon", className: "inline-icon" }),
@@ -8043,7 +8043,7 @@ class ContactForm extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Componen
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 "button",
-                { type: "submit", className: "btn btn-lg btn-square", id: "submit-button" },
+                { type: "submit", className: "btn btn-md btn-square pull-right", id: "submit-button" },
                 "Submit"
             )
         );
@@ -8095,10 +8095,10 @@ class Footer extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     render() {
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             "div",
-            { className: "container footer" },
+            { className: "container" },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 "p",
-                null,
+                { className: "footer" },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("i", { className: "fa fa-copyright", "aria-hidden": "true" }),
                 "\xA0",
                 new Date().getFullYear(),

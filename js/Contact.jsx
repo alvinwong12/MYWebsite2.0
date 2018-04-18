@@ -4,7 +4,7 @@ class Contact extends React.Component{
     render(){
         return (
             <div className="container">
-                <h1 className="text-center section-header">CONTACT</h1>
+                <p className="text-center section-header h1">CONTACT</p>
                 <div className = "spacing-sm"></div>
                 <div className="bar centre"></div>
                 <div className = "spacing-lg"></div>
@@ -12,7 +12,7 @@ class Contact extends React.Component{
                     <div className="col">
                         <p><span className="fa fa-whatsapp"></span>&nbsp;&nbsp;+1 647 988 8346</p>
                         <p><span className="fa fa-envelope"></span>&nbsp;&nbsp;alvinwong312@gmail.com</p>
-                        <p>SOCIAL MEDIA</p>
+                        <p className="section-subheader h3">SOCIAL MEDIA</p>
     
                             <div id="fb-icon" className="inline-icon"></div>
                             <div id="linkedin-icon"  className="inline-icon"></div>
