@@ -1,5 +1,17 @@
 /* Coolors Exported Palette - coolors.co/33658a-86bbd8-2f4858-f6ae2d-f26419 */
 /* RGB */
+@media screen and (min-width: 960px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+.navbar-nav .nav-link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
 body {
   height: 100%;
   width: 100%;
@@ -40,6 +52,7 @@ body {
 
 .footer {
   text-align: center;
+  margin-bottom: 0;
 }
 
 .inline-icon {
@@ -48,4 +61,21 @@ body {
 
 .icon-link {
   text-decoration: none;
+}
+
+.section {
+  padding: 1rem 0rem;
+}
+
+.section-header {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.section-bg-light {
+  background-color: #ffffff;
+}
+
+.section-bg-dark {
+  background-color: #f8f7f8;
 }

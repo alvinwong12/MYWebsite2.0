@@ -4,7 +4,7 @@ class Contact extends React.Component{
     render(){
         return (
             <div className="container">
-                <h1 className="text-center">Contact Me</h1>
+                <h1 className="text-center section-header">CONTACT</h1>
                 <div className = "spacing-sm"></div>
                 <div className="bar centre"></div>
                 <div className = "spacing-lg"></div>

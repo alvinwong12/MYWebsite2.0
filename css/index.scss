@@ -1,4 +1,6 @@
 @import 'palette';
+@import 'screen_size';
+@import 'navigation';
 
 body {
     height:100%;
@@ -36,6 +38,7 @@ body {
 
 .footer {
     text-align: center;
+    margin-bottom: 0;
 }
 .inline-icon{
     display: inline;
@@ -44,3 +47,20 @@ body {
 .icon-link {
     text-decoration: none;
 }
+
+.section{
+    padding: 1rem 0rem;
+}
+.section-header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.section-bg-light{
+    background-color: $section-bg-1;
+}
+
+.section-bg-dark{
+    background-color: $section-bg-2;
+}
+

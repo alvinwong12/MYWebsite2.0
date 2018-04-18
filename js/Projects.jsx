@@ -5,7 +5,7 @@ class Projects extends React.Component {
         return (
             <div className="container">
                 <div className="text-center ">
-                    <h1>Projects</h1>
+                    <h1 className="section-header">PROJECTS</h1>
                     <div className = "spacing-sm"></div>
                     <div className="bar centre"></div>
                 </div>

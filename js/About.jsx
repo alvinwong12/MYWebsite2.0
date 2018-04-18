@@ -6,7 +6,7 @@ class About extends React.Component {
             <div className="container">
                 <div className="text-center "> 
                     <div>
-                        <h1>About Me</h1>
+                        <h1 className="section-header">ABOUT ME</h1>
                         <div className = "spacing-sm"></div>
                         <div className="bar centre"></div>
                     </div>
