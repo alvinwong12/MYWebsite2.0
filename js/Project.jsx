@@ -3,14 +3,15 @@ import React from 'react';
 class Project extends React.Component{
     render(){
         return (
-            <div className="card">
+            <div className="card project">
                 <img className="card-img-top" src="..." alt="Card image cap"/>
                 <div className="card-body">
-                    <h5 className="card-title">{this.props.title}</h5>
-                    <p className="card-text">{this.props.desc}</p>
+                    <p className="card-title h4">{this.props.title.toUpperCase()}</p>
+                    <p className="card-text content project-content">{this.props.desc}</p>
                 </div>
                 <div className="card-footer text-right">
-                    <a href={this.props.link} className="btn btn-primary"><i className="material-icons">link</i></a>
+                    <a href={this.props.github} className="text-muted footer-link"><i className="fa fa-github"></i></a>
+                    <a href={this.props.link} className="text-muted footer-link"><i className="fa fa-link"></i></a>
                 </div>
             </div>
         );
@@ -18,9 +19,10 @@ class Project extends React.Component{
 };
 
 Project.defaultProps = {
-    title: "Project Title",
+    title: "project title",
     desc: "Sample Description",
     link: "#",
+    github: "#",
     link_text: "project link"
 };
 

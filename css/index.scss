@@ -1,12 +1,15 @@
 @import 'palette';
 @import 'screen_size';
 @import 'navigation';
+@import 'project';
+@import 'contact';
+@import 'jumbotron';
 
 body {
     height:100%;
     width: 100%;
     padding-top: 56px;  /* To Account for fixed navbar  */
-    position: relative; 
+    position: relative;
 }
 
 .spacing-lg{
@@ -28,6 +31,13 @@ body {
 	/* transition: 0.5s; */
 }
 
+.btn-inverse{
+    background: white;
+    border-color: $color1;
+    color: $color1;
+    border-width: 3px;
+}
+
 .bar{
 	height:3px;
     width:30px;
@@ -45,9 +55,9 @@ body {
     display: inline;
 }
 
-.icon-link {
+.icon-link, .icon-link:hover {
     text-decoration: none;
-    color: black;
+    color: $color1;
 }
 
 .section{
@@ -72,3 +82,12 @@ body {
     background-color: $section-bg-2;
 }
 
+.content{
+    color: $color1;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.square-input{
+    border-radius: 0;
+}

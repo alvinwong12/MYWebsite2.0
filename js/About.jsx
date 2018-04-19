@@ -24,14 +24,16 @@ class About extends React.Component {
                             </div>
                         </div>
                     <div className="col">
-                        <p>
-                            About Me Placeholder paragraph
-                        </p>
+                        <p className="content">{this.props.text}</p>
                     </div>
                 </div>
             </div>
         );
     }
+}
+
+About.defaultProps = {
+    text: "Paragraph"
 }
 
 export default About

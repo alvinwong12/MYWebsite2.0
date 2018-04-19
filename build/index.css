@@ -22,6 +22,41 @@
   background-color: white !important;
 }
 
+.footer-link {
+  font-size: 1.25rem;
+  margin: 0 0.5rem;
+}
+
+.card-footer {
+  background-color: white;
+}
+
+.card-title {
+  color: #f26419;
+}
+
+.project {
+  width: 18rem;
+}
+
+.project-content {
+  font-size: 0.875rem;
+}
+
+.center-deck {
+  margin: auto;
+}
+
+.contact-content {
+  font-size: 1.25rem;
+}
+
+.jumbotron-header {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  color: #33658a;
+}
+
 body {
   height: 100%;
   width: 100%;
@@ -51,6 +86,13 @@ body {
   /* transition: 0.5s; */
 }
 
+.btn-inverse {
+  background: white;
+  border-color: #33658a;
+  color: #33658a;
+  border-width: 3px;
+}
+
 .bar {
   height: 3px;
   width: 30px;
@@ -70,9 +112,9 @@ body {
   display: inline;
 }
 
-.icon-link {
+.icon-link, .icon-link:hover {
   text-decoration: none;
-  color: black;
+  color: #33658a;
 }
 
 .section {
@@ -96,4 +138,14 @@ body {
 
 .section-bg-dark {
   background-color: #f8f7f8;
+}
+
+.content {
+  color: #33658a;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+.square-input {
+  border-radius: 0;
 }

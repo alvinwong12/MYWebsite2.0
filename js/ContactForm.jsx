@@ -40,15 +40,15 @@ class ContactForm extends React.Component {
         return (
             <form onSubmit={this.handleSubmit}>
                 <div className="form-group">
-                        <input type='text' className="form-control" placeholder="Name" name="name" onChange={this.handleNameChange} required/>
+                        <input type='text' className="form-control square-input" placeholder="Name" name="name" onChange={this.handleNameChange} required/>
                 </div>
                 <div className="form-group">
-                        <input type="email" className="form-control" placeholder="Email" name="email" onChange={this.handleEmailChange} required/>
+                        <input type="email" className="form-control square-input" placeholder="Email" name="email" onChange={this.handleEmailChange} required/>
                 </div>
                 <div className="form-group">
-                        <textarea className="form-control" rows="3" placeholder="Message" name="message" onChange={this.handleMsgChange} required />
+                        <textarea className="form-control square-input" rows="3" placeholder="Message" name="message" onChange={this.handleMsgChange} required />
                 </div>
-                <button type="submit" className="btn btn-md btn-square pull-right" id="submit-button">Submit</button>
+                <button type="submit" className="btn btn-md btn-square btn-inverse pull-right" id="submit-button">SUBMIT</button>
             </form>
         );
     }
