@@ -3,3 +3,13 @@
     font-weight: 900;
     color: $color1;
 }
+
+.jumbotron .btn-square:hover{
+    color: $color1;
+    background-color: white;
+    border-color: white;
+}
+
+.jumbotron .content{
+    color: $color4;
+}

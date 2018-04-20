@@ -57,6 +57,16 @@
   color: #33658a;
 }
 
+.jumbotron .btn-square:hover {
+  color: #33658a;
+  background-color: white;
+  border-color: white;
+}
+
+.jumbotron .content {
+  color: #f6ae2d;
+}
+
 body {
   height: 100%;
   width: 100%;
@@ -83,7 +93,10 @@ body {
   border-radius: 0px;
   border-width: 2px;
   text-decoration: none;
-  /* transition: 0.5s; */
+}
+
+.btn-animated {
+  transition: 0.5s;
 }
 
 .btn-inverse {

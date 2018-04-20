@@ -6,8 +6,8 @@ class Jumbotron extends React.Component {
             <div className="jumbotron">
                 <div className="container text-center">
                     <p className="display-1 jumbotron-header">Alvin Wong</p>
-                    <p className="lead">Software Engineer</p>
-                    <p><a className="btn btn-primary btn-sm btn-square" href="#about" role="button">Learn more</a></p>
+                    <p className="content lead">Software Engineer</p>
+                    <p><a className="btn btn-primary btn-sm btn-square btn-animated" href="#about" role="button">More About Me</a></p>
                 </div>          
             </div>
         );

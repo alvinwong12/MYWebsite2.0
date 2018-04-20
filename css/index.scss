@@ -28,7 +28,10 @@ body {
 	border-radius:0px;
 	border-width: 2px;
 	text-decoration: none;
-	/* transition: 0.5s; */
+}
+
+.btn-animated{
+    transition: 0.5s;
 }
 
 .btn-inverse{
