@@ -853,13 +853,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
+var desc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam pharetra lorem, a dignissim ante auctor eu.";
+var intro = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vestibulum eros eget cursus suscipit. Donec et tristique lacus, eget rutrum metus. Nam ultrices velit ac dui condimentum aliquam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce nec enim finibus, tempor eros non, hendrerit tortor. In blandit sapien est, vel posuere arcu feugiat sit amet. Maecenas ipsum elit, convallis sed elementum at, dapibus vitae purus. Donec eget ex vitae turpis mollis placerat. Nullam urna purus, laoreet at congue sed, imperdiet sit amet erat. Nunc auctor orci quis eros efficitur ullamcorper.";
+var projectImage = "http://via.placeholder.com/480x350";
+var profile = "http://via.placeholder.com/480";
 __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__Navbar_jsx__["a" /* default */], null), document.getElementById('navbar'));
 __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__Jumbotron_jsx__["a" /* default */], null), document.getElementById('jumbotron'));
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__About_jsx__["a" /* default */], null), document.getElementById('about'));
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__About_jsx__["a" /* default */], { text: intro, image: profile }), document.getElementById('about'));
 __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__Projects_jsx__["a" /* default */], null), document.getElementById('projects'));
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_11__Project_jsx__["a" /* default */], null), document.getElementById("project1"));
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_11__Project_jsx__["a" /* default */], null), document.getElementById("project2"));
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_11__Project_jsx__["a" /* default */], null), document.getElementById("project3"));
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_11__Project_jsx__["a" /* default */], { desc: desc, image: projectImage }), document.getElementById("project1"));
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_11__Project_jsx__["a" /* default */], { desc: desc, image: projectImage }), document.getElementById("project2"));
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_11__Project_jsx__["a" /* default */], { desc: desc, image: projectImage }), document.getElementById("project3"));
+// ReactDOM.render(<Project desc={desc} image={projectImage}/>, document.getElementById("project4"));
 __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7__Contact_jsx__["a" /* default */], null), document.getElementById('contact'));
 __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8__ContactForm_jsx__["a" /* default */], null), document.getElementById('contact-form'));
 __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_9__IconLink_jsx__["a" /* default */], { icon: 'facebook', link: 'https://www.facebook.com/alvin.wong.353', inverseColour: true }), document.getElementById('fb-icon'));
@@ -7686,7 +7691,7 @@ class Navbar extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                         { className: "nav-item active" },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             "a",
-                            { href: "#jumbotron", className: "nav-link" },
+                            { href: "#", className: "nav-link" },
                             "HOME"
                         )
                     ),
@@ -7780,13 +7785,13 @@ class Jumbotron extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component 
                 "div",
                 { className: "container text-center" },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    "h1",
-                    null,
+                    "p",
+                    { className: "display-1 jumbotron-header" },
                     "Alvin Wong"
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     "p",
-                    null,
+                    { className: "content lead" },
                     "Software Engineer"
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -7794,8 +7799,8 @@ class Jumbotron extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component 
                     null,
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         "a",
-                        { className: "btn btn-primary btn-lg btn-square", href: "#about", role: "button" },
-                        "Learn more"
+                        { className: "btn btn-primary btn-sm btn-square btn-animated", href: "#about", role: "button" },
+                        "LEARN MORE"
                     )
                 )
             )
@@ -7835,44 +7840,34 @@ class About extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                 )
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "spacing-lg" }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "spacing-lg" }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "spacing-lg" }),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 "div",
                 { className: "row" },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     "div",
-                    { className: "col" },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        "div",
-                        { className: "media" },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            "div",
-                            { className: "media-left" },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "media-object", src: "...", alt: "..." })
-                        ),
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                            "div",
-                            { className: "media-body" },
-                            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                                "h4",
-                                { className: "media-heading" },
-                                "Media heading"
-                            )
-                        )
-                    )
+                    { className: "col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 col-bottom-spacing" },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { src: this.props.image, className: "img-fluid rounded-circle mx-auto d-block", alt: "Responsive image" })
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     "div",
-                    { className: "col" },
+                    { className: "col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 col-bottom-spacing" },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         "p",
-                        null,
-                        "About Me Placeholder paragraph"
+                        { className: "content text-justify" },
+                        this.props.text
                     )
                 )
             )
         );
     }
 }
+
+About.defaultProps = {
+    text: "Paragraph",
+    image: "..."
+};
 
 /* harmony default export */ __webpack_exports__["a"] = (About);
 
@@ -7902,12 +7897,26 @@ class Projects extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "bar centre" })
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "spacing-lg" }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "spacing-lg" }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "spacing-lg" }),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 "div",
-                { className: "card-deck" },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { id: "project1" }),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { id: "project2" }),
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { id: "project3" })
+                { className: "row" },
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "div",
+                    { className: "col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 col-bottom-spacing" },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { id: "project1" })
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "div",
+                    { className: "col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 col-bottom-spacing" },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { id: "project2" })
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "div",
+                    { className: "col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 col-bottom-spacing" },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { id: "project3" })
+                )
             )
         );
     }
@@ -7937,29 +7946,34 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "spacing-sm" }),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "bar centre" }),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "spacing-lg" }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "spacing-lg" }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "spacing-lg" }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                "p",
+                { className: "lead text-center content contact-content" },
+                "Get in touch!"
+            ),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "spacing-md" }),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 "div",
                 { className: "row" },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     "div",
-                    { className: "col" },
+                    { className: "col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 col-bottom-spacing" },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         "p",
-                        null,
+                        { className: "content contact-content" },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", { className: "fa fa-whatsapp" }),
                         "\xA0\xA0+1 647 988 8346"
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                         "p",
-                        null,
+                        { className: "content contact-content" },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", { className: "fa fa-envelope" }),
                         "\xA0\xA0alvinwong312@gmail.com"
                     ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        "p",
-                        { className: "section-subheader h3" },
-                        "SOCIAL MEDIA"
-                    ),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "spacing-lg" }),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "spacing-lg" }),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { id: "fb-icon", className: "inline-icon" }),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { id: "linkedin-icon", className: "inline-icon" }),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { id: "github-icon", className: "inline-icon" }),
@@ -7967,7 +7981,7 @@ class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     "div",
-                    { className: "col" },
+                    { className: "col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 col-bottom-spacing" },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { id: "contact-form" })
                 )
             )
@@ -8029,22 +8043,22 @@ class ContactForm extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Componen
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 "div",
                 { className: "form-group" },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", { type: "text", className: "form-control", placeholder: "Name", name: "name", onChange: this.handleNameChange, required: true })
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", { type: "text", className: "form-control square-input", placeholder: "Name", name: "name", onChange: this.handleNameChange, required: true })
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 "div",
                 { className: "form-group" },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", { type: "email", className: "form-control", placeholder: "Email", name: "email", onChange: this.handleEmailChange, required: true })
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", { type: "email", className: "form-control square-input", placeholder: "Email", name: "email", onChange: this.handleEmailChange, required: true })
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 "div",
                 { className: "form-group" },
-                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("textarea", { className: "form-control", rows: "3", placeholder: "Message", name: "message", onChange: this.handleMsgChange, required: true })
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("textarea", { className: "form-control square-input", rows: "3", placeholder: "Message", name: "message", onChange: this.handleMsgChange, required: true })
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 "button",
-                { type: "submit", className: "btn btn-md btn-square pull-right", id: "submit-button" },
-                "Submit"
+                { type: "submit", className: "btn btn-md btn-square btn-inverse pull-right btn-animated", id: "submit-button" },
+                "SUBMIT"
             )
         );
     }
@@ -8123,19 +8137,21 @@ class Project extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     render() {
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             "div",
-            { className: "card" },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "card-img-top", src: "...", alt: "Card image cap" }),
+            { className: "card project" },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", { className: "card-img-top", src: this.props.image, alt: "Card image cap" }),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 "div",
                 { className: "card-body" },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    "h5",
-                    { className: "card-title" },
-                    this.props.title
+                    "p",
+                    { className: "card-title h4" },
+                    this.props.title.toUpperCase()
                 ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "spacing-lg" }),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "spacing-lg" }),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     "p",
-                    { className: "card-text" },
+                    { className: "card-text content project-content" },
                     this.props.desc
                 )
             ),
@@ -8144,12 +8160,13 @@ class Project extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                 { className: "card-footer text-right" },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                     "a",
-                    { href: this.props.link, className: "btn btn-primary" },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        "i",
-                        { className: "material-icons" },
-                        "link"
-                    )
+                    { href: this.props.github, className: "text-muted footer-link" },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("i", { className: "fa fa-github" })
+                ),
+                __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+                    "a",
+                    { href: this.props.link, className: "text-muted footer-link" },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("i", { className: "fa fa-link" })
                 )
             )
         );
@@ -8157,10 +8174,12 @@ class Project extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 };
 
 Project.defaultProps = {
-    title: "Project Title",
+    title: "project title",
     desc: "Sample Description",
     link: "#",
-    link_text: "project link"
+    github: "#",
+    link_text: "project link",
+    image: "..."
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (Project);

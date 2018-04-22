@@ -5,9 +5,10 @@
   "main": "main.js",
   "scripts": {
     "start": "webpack-dev-server --hot --config webpack.config.frontend.js",
-    "build": "npm run css && webpack --config webpack.config.js",
+    "build": "npm run css && webpack --config webpack.config.js && python build.py",
     "backend": "npm run build && node server.js",
-    "css": "sass css/index.scss build/index.css"
+    "css": "sass css/index.scss build/index.css",
+    "deploy": "npm run build && git push heroku master -f"
   },
   "author": "",
   "license": "ISC",
@@ -17,7 +18,6 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-es2016": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "css-loader": "^0.28.11",
     "express": "^4.16.3",
     "html-webpack-plugin": "^2.30.1",
     "react": "^16.3.0",
@@ -26,6 +26,10 @@
     "webpack-dev-server": "^2.9.4"
   },
   "devDependencies": {
-    "html-loader": "^0.5.5"
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-loader": "^0.5.5",
+    "style-ext-html-webpack-plugin": "^3.4.7",
+    "style-loader": "^0.21.0"
   }
 }

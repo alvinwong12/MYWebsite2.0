@@ -22,10 +22,6 @@ var config = {
             loader: 'babel-loader'
          },
          {
-            test: /\.css$/,
-            loaders: ['css?modules']
-         },
-         {
             test: /\.html$/,
             loader: 'html-loader'
         }

@@ -1,3 +1,4 @@
+var path = require('path');
 var HTMLWebpackPlugin = require('html-webpack-plugin');
 var HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
 	template: __dirname + '/index.html',
@@ -12,7 +13,8 @@ var config = {
     },
     devServer: {
        inline: true,
-       port: 8080
+       port: 8080,
+       contentBase: [path.join(__dirname, "js"), path.join(__dirname, "build")]
     },
     module: {
        loaders: [
@@ -23,10 +25,6 @@ var config = {
              query: {
                 presets: ['es2016', 'react']
              }
-          },
-          {
-             test: /\.css$/,
-             loaders: ['css?modules']
           }
        ]
     },
