@@ -13,3 +13,12 @@
 .jumbotron .content{
     color: $color4;
 }
+
+.jumbotron{
+    background-image: url("http://via.placeholder.com/1200x900");
+    height: 45rem;
+    background-position: center; 
+}
+.jumbotron .container{
+    padding-top: 12rem;
+}

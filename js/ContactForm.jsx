@@ -48,7 +48,7 @@ class ContactForm extends React.Component {
                 <div className="form-group">
                         <textarea className="form-control square-input" rows="3" placeholder="Message" name="message" onChange={this.handleMsgChange} required />
                 </div>
-                <button type="submit" className="btn btn-md btn-square btn-inverse pull-right" id="submit-button">SUBMIT</button>
+                <button type="submit" className="btn btn-md btn-square btn-inverse pull-right btn-animated" id="submit-button">SUBMIT</button>
             </form>
         );
     }

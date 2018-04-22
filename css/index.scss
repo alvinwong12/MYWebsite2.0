@@ -4,6 +4,7 @@
 @import 'project';
 @import 'contact';
 @import 'jumbotron';
+@import 'about';
 
 body {
     height:100%;
@@ -13,13 +14,13 @@ body {
 }
 
 .spacing-lg{
-    margin-bottom: 5%;
+    height: 1rem;
 }
 .spacing-md{
-    margin-bottom: 3%;
+    height: 0.5rem;
 }
 .spacing-sm{
-    margin-bottom: 1%;
+    height: 0.25rem;
 }
 
 .btn-square {
@@ -93,4 +94,8 @@ body {
 
 .square-input{
     border-radius: 0;
+}
+
+.col-bottom-spacing{
+    margin-bottom: 2rem;
 }

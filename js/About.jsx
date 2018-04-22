@@ -12,19 +12,14 @@ class About extends React.Component {
                     </div>
                 </div>
                 <div className = "spacing-lg"></div>
+                <div className = "spacing-lg"></div>
+                <div className = "spacing-lg"></div>
                 <div className="row">
-                    <div className="col">
-                        <div className="media">
-                            <div className="media-left">
-                                <img className="media-object" src="..." alt="..."/>
-                            </div>
-                            <div className="media-body">
-                                <h4 className="media-heading">Media heading</h4>
-                            </div>
-                            </div>
-                        </div>
-                    <div className="col">
-                        <p className="content">{this.props.text}</p>
+                    <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 col-bottom-spacing">
+                        <img src={this.props.image} className="img-fluid rounded-circle mx-auto d-block" alt="Responsive image"/>
+                    </div>
+                    <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 col-bottom-spacing">
+                        <p className="content text-justify">{this.props.text}</p>
                     </div>
                 </div>
             </div>
@@ -33,7 +28,8 @@ class About extends React.Component {
 }
 
 About.defaultProps = {
-    text: "Paragraph"
+    text: "Paragraph",
+    image: "..."
 }
 
 export default About

@@ -1,3 +1,13 @@
 .contact-content{
     font-size: 1.25rem;
 }
+
+#submit-button:hover {
+    background-color: $color1;
+    color: white;
+}
+
+.square-input:focus{
+    border-color: #f6ae2d;
+    box-shadow: 0 0 0 0.2rem rgba(246, 174, 45, 0.25);
+}

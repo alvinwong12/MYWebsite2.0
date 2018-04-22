@@ -12,7 +12,8 @@
 }
 
 .project{
-    width: 18rem;
+    width: 100%;
+    // margin-bottom: 2rem;
 }
 
 .project-content{
@@ -21,4 +22,7 @@
 
 .center-deck{
     margin: auto;
+}
+.card-deck{
+    margin-left: 5.5rem;
 }

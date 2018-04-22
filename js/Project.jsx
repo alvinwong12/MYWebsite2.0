@@ -4,9 +4,11 @@ class Project extends React.Component{
     render(){
         return (
             <div className="card project">
-                <img className="card-img-top" src="..." alt="Card image cap"/>
+                <img className="card-img-top" src={this.props.image} alt="Card image cap"/>
                 <div className="card-body">
                     <p className="card-title h4">{this.props.title.toUpperCase()}</p>
+                    <div className="spacing-lg"></div>
+                    <div className="spacing-lg"></div>
                     <p className="card-text content project-content">{this.props.desc}</p>
                 </div>
                 <div className="card-footer text-right">
@@ -23,7 +25,8 @@ Project.defaultProps = {
     desc: "Sample Description",
     link: "#",
     github: "#",
-    link_text: "project link"
+    link_text: "project link",
+    image: "..."
 };
 
 export default Project;

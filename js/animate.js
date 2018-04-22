@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('body').scrollspy({target: ".navbar", offset: 50});   
-    $(".navbar-nav .nav-item .nav-link").on('click', function(event) {
+    $(".navbar-nav .nav-item .nav-link .jumbotron-button").on('click', function(event) {
         if (this.hash !== "") {
             event.preventDefault();
             var hash = this.hash;

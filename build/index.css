@@ -36,7 +36,7 @@
 }
 
 .project {
-  width: 18rem;
+  width: 100%;
 }
 
 .project-content {
@@ -47,8 +47,22 @@
   margin: auto;
 }
 
+.card-deck {
+  margin-left: 5.5rem;
+}
+
 .contact-content {
   font-size: 1.25rem;
+}
+
+#submit-button:hover {
+  background-color: #33658a;
+  color: white;
+}
+
+.square-input:focus {
+  border-color: #f6ae2d;
+  box-shadow: 0 0 0 0.2rem rgba(246, 174, 45, 0.25);
 }
 
 .jumbotron-header {
@@ -67,6 +81,20 @@
   color: #f6ae2d;
 }
 
+.jumbotron {
+  background-image: url("http://via.placeholder.com/1200x900");
+  height: 45rem;
+  background-position: center;
+}
+
+.jumbotron .container {
+  padding-top: 12rem;
+}
+
+#about .content {
+  padding-top: 7rem;
+}
+
 body {
   height: 100%;
   width: 100%;
@@ -76,15 +104,15 @@ body {
 }
 
 .spacing-lg {
-  margin-bottom: 5%;
+  height: 1rem;
 }
 
 .spacing-md {
-  margin-bottom: 3%;
+  height: 0.5rem;
 }
 
 .spacing-sm {
-  margin-bottom: 1%;
+  height: 0.25rem;
 }
 
 .btn-square {
@@ -161,4 +189,8 @@ body {
 
 .square-input {
   border-radius: 0;
+}
+
+.col-bottom-spacing {
+  margin-bottom: 2rem;
 }
