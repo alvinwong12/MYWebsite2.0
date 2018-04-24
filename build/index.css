@@ -65,6 +65,10 @@
   box-shadow: 0 0 0 0.2rem rgba(246, 174, 45, 0.25);
 }
 
+#contact-form .content {
+  color: #86bbd8;
+}
+
 .jumbotron-header {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
