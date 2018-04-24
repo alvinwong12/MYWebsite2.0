@@ -1,4 +1,5 @@
 import React from 'react';
+import config from '../config/config.js';
 
 class Contact extends React.Component{
     render(){
@@ -14,8 +15,8 @@ class Contact extends React.Component{
                 <div className = "spacing-md"></div>
                 <div className="row">
                     <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 col-bottom-spacing">
-                        <p className="content contact-content"><span className="fa fa-whatsapp"></span>&nbsp;&nbsp;+1 647 988 8346</p>
-                        <p className="content contact-content"><span className="fa fa-envelope"></span>&nbsp;&nbsp;alvinwong312@gmail.com</p>
+                        <p className="content contact-content"><span className="fa fa-whatsapp"></span>&nbsp;&nbsp;{config.phone}</p>
+                        <p className="content contact-content"><span className="fa fa-envelope"></span>&nbsp;&nbsp;{config.email}</p>
                         <div className = "spacing-lg"></div>
                         <div className = "spacing-lg"></div>
                         <div id="fb-icon" className="inline-icon"></div>

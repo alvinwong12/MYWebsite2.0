@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 13);
+/******/ 	return __webpack_require__(__webpack_require__.s = 14);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -71,9 +71,9 @@
 /* WEBPACK VAR INJECTION */(function(process) {
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(14);
-} else {
   module.exports = __webpack_require__(15);
+} else {
+  module.exports = __webpack_require__(16);
 }
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
@@ -575,7 +575,7 @@ module.exports = warning;
 if (process.env.NODE_ENV !== 'production') {
   var invariant = __webpack_require__(5);
   var warning = __webpack_require__(6);
-  var ReactPropTypesSecret = __webpack_require__(16);
+  var ReactPropTypesSecret = __webpack_require__(17);
   var loggedTypeFailures = {};
 }
 
@@ -660,9 +660,9 @@ if (process.env.NODE_ENV === 'production') {
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(17);
+  module.exports = __webpack_require__(18);
 } else {
-  module.exports = __webpack_require__(20);
+  module.exports = __webpack_require__(21);
 }
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
@@ -835,7 +835,7 @@ module.exports = shallowEqual;
  * 
  */
 
-var isTextNode = __webpack_require__(18);
+var isTextNode = __webpack_require__(19);
 
 /*eslint-disable no-bitwise */
 
@@ -864,6 +864,21 @@ module.exports = containsNode;
 
 /***/ }),
 /* 13 */
+/***/ (function(module, exports) {
+
+var config = {
+    email: "alvinwong312@gmail.com",
+    facebookLink: "https://www.facebook.com/alvin.wong.353",
+    linkedinLink: "https://www.linkedin.com/in/alvin-wong-a02814123",
+    githubLink: "https://github.com/alvinwong12",
+    snapchatLink: "https://www.snapchat.com/add/alvinwong12",
+    phone: "+1 647-988-8346"
+};
+
+module.exports = config;
+
+/***/ }),
+/* 14 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -872,16 +887,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react_dom___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react_dom__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Navbar_jsx__ = __webpack_require__(25);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Spacing_jsx__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Jumbotron_jsx__ = __webpack_require__(27);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__About_jsx__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Projects_jsx__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__Contact_jsx__ = __webpack_require__(30);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ContactForm_jsx__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__IconLink_jsx__ = __webpack_require__(35);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Footer_jsx__ = __webpack_require__(36);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__Project_jsx__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Navbar_jsx__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Jumbotron_jsx__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__About_jsx__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__Projects_jsx__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__Contact_jsx__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ContactForm_jsx__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__IconLink_jsx__ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__Footer_jsx__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Project_jsx__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__config_config_js__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__config_config_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__config_config_js__);
 
 
 
@@ -900,23 +916,23 @@ var intro = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vestibu
 var projectImage = "http://via.placeholder.com/480x350";
 var profile = "http://via.placeholder.com/480";
 __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__Navbar_jsx__["a" /* default */], null), document.getElementById('navbar'));
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__Jumbotron_jsx__["a" /* default */], null), document.getElementById('jumbotron'));
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__About_jsx__["a" /* default */], { text: intro, image: profile }), document.getElementById('about'));
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__Projects_jsx__["a" /* default */], null), document.getElementById('projects'));
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_11__Project_jsx__["a" /* default */], { desc: desc, image: projectImage }), document.getElementById("project1"));
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_11__Project_jsx__["a" /* default */], { desc: desc, image: projectImage }), document.getElementById("project2"));
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_11__Project_jsx__["a" /* default */], { desc: desc, image: projectImage }), document.getElementById("project3"));
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Jumbotron_jsx__["a" /* default */], null), document.getElementById('jumbotron'));
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__About_jsx__["a" /* default */], { text: intro, image: profile }), document.getElementById('about'));
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__Projects_jsx__["a" /* default */], null), document.getElementById('projects'));
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_10__Project_jsx__["a" /* default */], { desc: desc, image: projectImage }), document.getElementById("project1"));
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_10__Project_jsx__["a" /* default */], { desc: desc, image: projectImage }), document.getElementById("project2"));
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_10__Project_jsx__["a" /* default */], { desc: desc, image: projectImage }), document.getElementById("project3"));
 // ReactDOM.render(<Project desc={desc} image={projectImage}/>, document.getElementById("project4"));
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7__Contact_jsx__["a" /* default */], null), document.getElementById('contact'));
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8__ContactForm_jsx__["a" /* default */], null), document.getElementById('contact-form'));
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_9__IconLink_jsx__["a" /* default */], { icon: 'facebook', link: 'https://www.facebook.com/alvin.wong.353', inverseColour: true }), document.getElementById('fb-icon'));
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_9__IconLink_jsx__["a" /* default */], { icon: 'linkedin', link: 'https://www.linkedin.com/in/alvin-wong-a02814123', inverseColour: true }), document.getElementById('linkedin-icon'));
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_9__IconLink_jsx__["a" /* default */], { icon: 'github', link: 'https://github.com/alvinwong12', inverseColour: true }), document.getElementById('github-icon'));
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_9__IconLink_jsx__["a" /* default */], { icon: 'snapchat-ghost', link: 'https://www.snapchat.com/add/alvinwong12', inverseColour: true }), document.getElementById('snapchat-icon'));
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_10__Footer_jsx__["a" /* default */], null), document.getElementById('footer'));
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__Contact_jsx__["a" /* default */], null), document.getElementById('contact'));
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7__ContactForm_jsx__["a" /* default */], null), document.getElementById('contact-form'));
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8__IconLink_jsx__["a" /* default */], { icon: 'facebook', link: __WEBPACK_IMPORTED_MODULE_11__config_config_js___default.a.facebookLink, inverseColour: true }), document.getElementById('fb-icon'));
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8__IconLink_jsx__["a" /* default */], { icon: 'linkedin', link: __WEBPACK_IMPORTED_MODULE_11__config_config_js___default.a.linkedinLink, inverseColour: true }), document.getElementById('linkedin-icon'));
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8__IconLink_jsx__["a" /* default */], { icon: 'github', link: __WEBPACK_IMPORTED_MODULE_11__config_config_js___default.a.githubLink, inverseColour: true }), document.getElementById('github-icon'));
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_8__IconLink_jsx__["a" /* default */], { icon: 'snapchat-ghost', link: __WEBPACK_IMPORTED_MODULE_11__config_config_js___default.a.snapchatLink, inverseColour: true }), document.getElementById('snapchat-icon'));
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_9__Footer_jsx__["a" /* default */], null), document.getElementById('footer'));
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1034,7 +1050,7 @@ var V = { Children: { map: function (a, b, e) {
 module.exports = X["default"] ? X["default"] : X;
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2448,7 +2464,7 @@ if (process.env.NODE_ENV !== "production") {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2466,7 +2482,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 module.exports = ReactPropTypesSecret;
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4552,7 +4568,7 @@ var Gg = { createPortal: Fg, findDOMNode: function (a) {
     Ig = Hg && Gg || Hg;module.exports = Ig["default"] ? Ig["default"] : Ig;
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4567,7 +4583,7 @@ var Gg = { createPortal: Fg, findDOMNode: function (a) {
  * @typechecks
  */
 
-var isNode = __webpack_require__(19);
+var isNode = __webpack_require__(20);
 
 /**
  * @param {*} object The object to check.
@@ -4580,7 +4596,7 @@ function isTextNode(object) {
 module.exports = isTextNode;
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4609,7 +4625,7 @@ function isNode(object) {
 module.exports = isNode;
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4620,7 +4636,7 @@ module.exports = isNode;
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */if(process.env.NODE_ENV!=="production"){(function(){'use strict';var React=__webpack_require__(0);var invariant=__webpack_require__(5);var warning=__webpack_require__(6);var ExecutionEnvironment=__webpack_require__(9);var _assign=__webpack_require__(3);var emptyFunction=__webpack_require__(2);var checkPropTypes=__webpack_require__(7);var getActiveElement=__webpack_require__(10);var shallowEqual=__webpack_require__(11);var containsNode=__webpack_require__(12);var emptyObject=__webpack_require__(4);var hyphenateStyleName=__webpack_require__(21);var camelizeStyleName=__webpack_require__(23);/**
+ */if(process.env.NODE_ENV!=="production"){(function(){'use strict';var React=__webpack_require__(0);var invariant=__webpack_require__(5);var warning=__webpack_require__(6);var ExecutionEnvironment=__webpack_require__(9);var _assign=__webpack_require__(3);var emptyFunction=__webpack_require__(2);var checkPropTypes=__webpack_require__(7);var getActiveElement=__webpack_require__(10);var shallowEqual=__webpack_require__(11);var containsNode=__webpack_require__(12);var emptyObject=__webpack_require__(4);var hyphenateStyleName=__webpack_require__(22);var camelizeStyleName=__webpack_require__(24);/**
  * WARNING: DO NOT manually require this module.
  * This is a replacement for `invariant(...)` used by the error code system
  * and will _only_ be required by the corresponding babel pass.
@@ -7506,7 +7522,7 @@ var reactDom=ReactDOM$3['default']?ReactDOM$3['default']:ReactDOM$3;module.expor
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7521,7 +7537,7 @@ var reactDom=ReactDOM$3['default']?ReactDOM$3['default']:ReactDOM$3;module.expor
 
 
 
-var hyphenate = __webpack_require__(22);
+var hyphenate = __webpack_require__(23);
 
 var msPattern = /^ms-/;
 
@@ -7548,7 +7564,7 @@ function hyphenateStyleName(string) {
 module.exports = hyphenateStyleName;
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7584,7 +7600,7 @@ function hyphenate(string) {
 module.exports = hyphenate;
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7599,7 +7615,7 @@ module.exports = hyphenate;
 
 
 
-var camelize = __webpack_require__(24);
+var camelize = __webpack_require__(25);
 
 var msPattern = /^-ms-/;
 
@@ -7627,7 +7643,7 @@ function camelizeStyleName(string) {
 module.exports = camelizeStyleName;
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7662,7 +7678,7 @@ function camelize(string) {
 module.exports = camelize;
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7742,30 +7758,6 @@ class Navbar extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 }
 
 /* harmony default export */ __webpack_exports__["a"] = (Navbar);
-
-/***/ }),
-/* 26 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-
-
-class Spacing extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
-    render() {
-        return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "div",
-            { className: "spacing" },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "h3",
-                null,
-                "Space"
-            )
-        );
-    }
-}
-/* unused harmony default export */ var _unused_webpack_default_export = (Spacing);
 
 /***/ }),
 /* 27 */
@@ -7931,58 +7923,63 @@ class Projects extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_config_js__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__config_config_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__config_config_js__);
+
 
 
 class Contact extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     render() {
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            "div",
-            { className: "container" },
+            'div',
+            { className: 'container' },
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "p",
-                { className: "text-center section-header h1" },
-                "CONTACT"
+                'p',
+                { className: 'text-center section-header h1' },
+                'CONTACT'
             ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "spacing-sm" }),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "bar centre" }),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "spacing-lg" }),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "spacing-lg" }),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "spacing-lg" }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'spacing-sm' }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'bar centre' }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'spacing-lg' }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'spacing-lg' }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'spacing-lg' }),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "p",
-                { className: "lead text-center content contact-content" },
-                "Get in touch!"
+                'p',
+                { className: 'lead text-center content contact-content' },
+                'Get in touch!'
             ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "spacing-md" }),
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'spacing-md' }),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                "div",
-                { className: "row" },
+                'div',
+                { className: 'row' },
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    "div",
-                    { className: "col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 col-bottom-spacing" },
+                    'div',
+                    { className: 'col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 col-bottom-spacing' },
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        "p",
-                        { className: "content contact-content" },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", { className: "fa fa-whatsapp" }),
-                        "\xA0\xA0+1 647 988 8346"
+                        'p',
+                        { className: 'content contact-content' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', { className: 'fa fa-whatsapp' }),
+                        '\xA0\xA0',
+                        __WEBPACK_IMPORTED_MODULE_1__config_config_js___default.a.phone
                     ),
                     __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                        "p",
-                        { className: "content contact-content" },
-                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", { className: "fa fa-envelope" }),
-                        "\xA0\xA0alvinwong312@gmail.com"
+                        'p',
+                        { className: 'content contact-content' },
+                        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('span', { className: 'fa fa-envelope' }),
+                        '\xA0\xA0',
+                        __WEBPACK_IMPORTED_MODULE_1__config_config_js___default.a.email
                     ),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "spacing-lg" }),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "spacing-lg" }),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { id: "fb-icon", className: "inline-icon" }),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { id: "linkedin-icon", className: "inline-icon" }),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { id: "github-icon", className: "inline-icon" }),
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { id: "snapchat-icon", className: "inline-icon" })
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'spacing-lg' }),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { className: 'spacing-lg' }),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { id: 'fb-icon', className: 'inline-icon' }),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { id: 'linkedin-icon', className: 'inline-icon' }),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { id: 'github-icon', className: 'inline-icon' }),
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { id: 'snapchat-icon', className: 'inline-icon' })
                 ),
                 __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                    "div",
-                    { className: "col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 col-bottom-spacing" },
-                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { id: "contact-form" })
+                    'div',
+                    { className: 'col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 col-bottom-spacing' },
+                    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', { id: 'contact-form' })
                 )
             )
         );

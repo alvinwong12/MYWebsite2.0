@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Navbar from  './Navbar.jsx';
-import Spacing from  './Spacing.jsx';
 import Jumbotron from './Jumbotron.jsx';
 import About from './About.jsx';
 import Projects from './Projects.jsx';
@@ -10,6 +9,7 @@ import ContactForm from './ContactForm.jsx';
 import IconLink from './IconLink.jsx';
 import Footer from './Footer.jsx';
 import Project from './Project.jsx';
+import config from '../config/config.js';
 
 var desc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam pharetra lorem, a dignissim ante auctor eu.";
 var intro = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vestibulum eros eget cursus suscipit. Donec et tristique lacus, eget rutrum metus. Nam ultrices velit ac dui condimentum aliquam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce nec enim finibus, tempor eros non, hendrerit tortor. In blandit sapien est, vel posuere arcu feugiat sit amet. Maecenas ipsum elit, convallis sed elementum at, dapibus vitae purus. Donec eget ex vitae turpis mollis placerat. Nullam urna purus, laoreet at congue sed, imperdiet sit amet erat. Nunc auctor orci quis eros efficitur ullamcorper.";
@@ -25,9 +25,9 @@ ReactDOM.render(<Project desc={desc} image={projectImage}/>, document.getElement
 // ReactDOM.render(<Project desc={desc} image={projectImage}/>, document.getElementById("project4"));
 ReactDOM.render(<Contact />, document.getElementById('contact'));
 ReactDOM.render(<ContactForm />, document.getElementById('contact-form'));
-ReactDOM.render(<IconLink icon="facebook" link="https://www.facebook.com/alvin.wong.353" inverseColour={true} />, document.getElementById('fb-icon'));
-ReactDOM.render(<IconLink icon="linkedin" link="https://www.linkedin.com/in/alvin-wong-a02814123" inverseColour={true} />, document.getElementById('linkedin-icon'));
-ReactDOM.render(<IconLink icon="github" link="https://github.com/alvinwong12" inverseColour={true} />, document.getElementById('github-icon'));
-ReactDOM.render(<IconLink icon="snapchat-ghost" link="https://www.snapchat.com/add/alvinwong12" inverseColour={true} />, document.getElementById('snapchat-icon'));
+ReactDOM.render(<IconLink icon="facebook" link={config.facebookLink} inverseColour={true} />, document.getElementById('fb-icon'));
+ReactDOM.render(<IconLink icon="linkedin" link={config.linkedinLink} inverseColour={true} />, document.getElementById('linkedin-icon'));
+ReactDOM.render(<IconLink icon="github" link={config.githubLink} inverseColour={true} />, document.getElementById('github-icon'));
+ReactDOM.render(<IconLink icon="snapchat-ghost" link={config.snapchatLink} inverseColour={true} />, document.getElementById('snapchat-icon'));
 ReactDOM.render(<Footer />, document.getElementById('footer'));
 

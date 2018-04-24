@@ -5,6 +5,7 @@ var bodyParser = require('body-parser');
 var fs = require('fs');
 var google = require('googleapis');
 var googleAuth = require('google-auth-library');
+var config = require('./config/config');
 
 app.use(bodyParser.json()); // for parsing application/x-www-form-urlencoded
 
@@ -40,8 +41,8 @@ function sendMail(auth, formData, callback) {
 
 	var email_lines = [];
 
-	email_lines.push('From: alvinwong312@gmail.com' );
-	email_lines.push('To: alvinwong312@gmail.com');
+	email_lines.push('From: ' + config.email);
+	email_lines.push('To: ' + config.email);
 	email_lines.push('Content-type: text/html;charset=iso-8859-1');
 	email_lines.push('MIME-Version: 1.0');
 	email_lines.push('Subject: Message from Alvin\'s personal website');
