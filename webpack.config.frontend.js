@@ -14,7 +14,7 @@ var config = {
     devServer: {
        inline: true,
        port: 8080,
-       contentBase: [path.join(__dirname, "js"), path.join(__dirname, "build"), path.join(__dirname, "css")]
+       contentBase: [path.join(__dirname, "js"), path.join(__dirname, "css"), path.join(__dirname, "assets")]
     },
     module: {
        loaders: [

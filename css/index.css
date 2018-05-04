@@ -1,0 +1,200 @@
+/* Coolors Exported Palette - coolors.co/33658a-86bbd8-2f4858-f6ae2d-f26419 */
+/* RGB */
+@media screen and (min-width: 960px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .active .nav-link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #33658a;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link.active {
+  color: #f6ae2d;
+}
+
+.bg-light {
+  background-color: white !important;
+}
+
+.footer-link {
+  font-size: 1.25rem;
+  margin: 0 0.5rem;
+}
+
+.card-footer {
+  background-color: white;
+}
+
+.card-title {
+  color: #f26419;
+}
+
+.project {
+  width: 100%;
+}
+
+.project-content {
+  font-size: 0.875rem;
+}
+
+.center-deck {
+  margin: auto;
+}
+
+.card-deck {
+  margin-left: 5.5rem;
+}
+
+.contact-content {
+  font-size: 1.25rem;
+}
+
+#submit-button:hover {
+  background-color: #33658a;
+  color: white;
+}
+
+.square-input:focus {
+  border-color: #f6ae2d;
+  box-shadow: 0 0 0 0.2rem rgba(246, 174, 45, 0.25);
+}
+
+#contact-form .content {
+  color: #86bbd8;
+}
+
+.jumbotron-header {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  color: #33658a;
+}
+
+.jumbotron .btn-square:hover {
+  color: #33658a;
+  background-color: white;
+  border-color: white;
+}
+
+.jumbotron .content {
+  color: #f6ae2d;
+}
+
+.jumbotron {
+  background-image: url("http://via.placeholder.com/1200x900");
+  height: 45rem;
+  background-position: center;
+}
+
+.jumbotron .container {
+  padding-top: 12rem;
+}
+
+#about .content {
+  padding-top: 7rem;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  padding-top: 56px;
+  /* To Account for fixed navbar  */
+  position: relative;
+}
+
+.spacing-lg {
+  height: 1rem;
+}
+
+.spacing-md {
+  height: 0.5rem;
+}
+
+.spacing-sm {
+  height: 0.25rem;
+}
+
+.btn-square {
+  background: #33658a;
+  border-color: transparent;
+  border-radius: 0px;
+  border-width: 2px;
+  text-decoration: none;
+}
+
+.btn-animated {
+  transition: 0.5s;
+}
+
+.btn-inverse {
+  background: white;
+  border-color: #33658a;
+  color: #33658a;
+  border-width: 3px;
+}
+
+.bar {
+  height: 3px;
+  width: 30px;
+  background-color: #86bbd8;
+}
+
+.centre {
+  margin: auto;
+}
+
+.footer {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.inline-icon {
+  display: inline;
+}
+
+.icon-link, .icon-link:hover {
+  text-decoration: none;
+  color: #33658a;
+}
+
+.section {
+  padding: 5rem 0rem;
+}
+
+.section-header {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #2f4858;
+}
+
+.section-subheader {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.section-bg-light {
+  background-color: #ffffff;
+}
+
+.section-bg-dark {
+  background-color: #f8f7f8;
+}
+
+.content {
+  color: #33658a;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+.square-input {
+  border-radius: 0;
+}
+
+.col-bottom-spacing {
+  margin-bottom: 2rem;
+}

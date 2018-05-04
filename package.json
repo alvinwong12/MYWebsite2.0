@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --hot --config webpack.config.frontend.js",
     "build": "npm run css && webpack --config webpack.config.js && python build.py",
     "backend": "npm run build && node server.js",
-    "css": "sass css/index.scss build/index.css",
+    "css": "sass css/index.scss css/index.css",
     "deploy": "npm run build && git push heroku master -f"
   },
   "author": "",

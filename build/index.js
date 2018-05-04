@@ -7747,7 +7747,7 @@ class Navbar extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
                         { className: "nav-item" },
                         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                             "a",
-                            { href: "../src/files/Alvin Wong Resume.pdf", target: "_blank", className: "nav-link" },
+                            { href: "alvin_wong_resume.pdf", target: "_blank", className: "nav-link" },
                             "RESUME"
                         )
                     )

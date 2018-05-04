@@ -15,7 +15,7 @@ class Navbar extends React.Component {
                         <li className="nav-item"><a href="#contact" className="nav-link">CONTACT</a></li>
                     </ul>
                     <ul className="navbar-nav ml-auto">
-                        <li className="nav-item"><a href="../src/files/Alvin Wong Resume.pdf" target="_blank" className="nav-link">RESUME</a></li>
+                        <li className="nav-item"><a href="alvin_wong_resume.pdf" target="_blank" className="nav-link">RESUME</a></li>
                     </ul>
                 </div>
             </nav>
