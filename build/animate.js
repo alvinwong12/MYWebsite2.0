@@ -20,4 +20,12 @@ $(document).ready(function(){
             });
         }
     });
+    $(window).scroll(function(){
+		if ($(window).scrollTop() > 56){
+			$("#main-navbar").css("cssText", "background: white !important;");
+		}
+		if ($(window).scrollTop() <= 56){
+			$("#main-navbar").css("cssText", "background: transparent !important;");
+		}
+	});
 });

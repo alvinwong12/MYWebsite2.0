@@ -898,6 +898,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__Project_jsx__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__config_config_js__ = __webpack_require__(13);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__config_config_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11__config_config_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__content_js__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__content_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12__content_js__);
 
 
 
@@ -911,17 +913,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
-var desc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam pharetra lorem, a dignissim ante auctor eu.";
-var intro = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vestibulum eros eget cursus suscipit. Donec et tristique lacus, eget rutrum metus. Nam ultrices velit ac dui condimentum aliquam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce nec enim finibus, tempor eros non, hendrerit tortor. In blandit sapien est, vel posuere arcu feugiat sit amet. Maecenas ipsum elit, convallis sed elementum at, dapibus vitae purus. Donec eget ex vitae turpis mollis placerat. Nullam urna purus, laoreet at congue sed, imperdiet sit amet erat. Nunc auctor orci quis eros efficitur ullamcorper.";
-var projectImage = "http://via.placeholder.com/480x350";
-var profile = "http://via.placeholder.com/480";
+
 __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__Navbar_jsx__["a" /* default */], null), document.getElementById('navbar'));
 __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__Jumbotron_jsx__["a" /* default */], null), document.getElementById('jumbotron'));
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__About_jsx__["a" /* default */], { text: intro, image: profile }), document.getElementById('about'));
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_4__About_jsx__["a" /* default */], { text: __WEBPACK_IMPORTED_MODULE_12__content_js___default.a['intro']['text'], image: __WEBPACK_IMPORTED_MODULE_12__content_js___default.a['intro']['image'] }), document.getElementById('about'));
 __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_5__Projects_jsx__["a" /* default */], null), document.getElementById('projects'));
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_10__Project_jsx__["a" /* default */], { desc: desc, image: projectImage }), document.getElementById("project1"));
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_10__Project_jsx__["a" /* default */], { desc: desc, image: projectImage }), document.getElementById("project2"));
-__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_10__Project_jsx__["a" /* default */], { desc: desc, image: projectImage }), document.getElementById("project3"));
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_10__Project_jsx__["a" /* default */], { desc: __WEBPACK_IMPORTED_MODULE_12__content_js___default.a['project_1']['desc'], image: __WEBPACK_IMPORTED_MODULE_12__content_js___default.a['project_1']['image'], title: __WEBPACK_IMPORTED_MODULE_12__content_js___default.a['project_1']['title'], link: __WEBPACK_IMPORTED_MODULE_12__content_js___default.a['project_1']['link'], github: __WEBPACK_IMPORTED_MODULE_12__content_js___default.a['project_1']['github'] }), document.getElementById("project1"));
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_10__Project_jsx__["a" /* default */], { desc: __WEBPACK_IMPORTED_MODULE_12__content_js___default.a['project_2']['desc'], image: __WEBPACK_IMPORTED_MODULE_12__content_js___default.a['project_2']['image'], title: __WEBPACK_IMPORTED_MODULE_12__content_js___default.a['project_2']['title'], link: __WEBPACK_IMPORTED_MODULE_12__content_js___default.a['project_2']['link'], github: __WEBPACK_IMPORTED_MODULE_12__content_js___default.a['project_2']['github'] }), document.getElementById("project2"));
+__WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_10__Project_jsx__["a" /* default */], { desc: __WEBPACK_IMPORTED_MODULE_12__content_js___default.a['project_3']['desc'], image: __WEBPACK_IMPORTED_MODULE_12__content_js___default.a['project_3']['image'], title: __WEBPACK_IMPORTED_MODULE_12__content_js___default.a['project_3']['title'], link: __WEBPACK_IMPORTED_MODULE_12__content_js___default.a['project_3']['link'], github: __WEBPACK_IMPORTED_MODULE_12__content_js___default.a['project_3']['github'] }), document.getElementById("project3"));
 // ReactDOM.render(<Project desc={desc} image={projectImage}/>, document.getElementById("project4"));
 __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_6__Contact_jsx__["a" /* default */], null), document.getElementById('contact'));
 __WEBPACK_IMPORTED_MODULE_1_react_dom___default.a.render(__WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_7__ContactForm_jsx__["a" /* default */], null), document.getElementById('contact-form'));
@@ -7773,6 +7772,7 @@ class Jumbotron extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component 
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
             "div",
             { className: "jumbotron" },
+            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", { className: "jumbotron-bg" }),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
                 "div",
                 { className: "container text-center" },
@@ -8288,6 +8288,42 @@ Project.defaultProps = {
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (Project);
+
+/***/ }),
+/* 38 */
+/***/ (function(module, exports) {
+
+var content = {
+    project_1: {
+        image: "project_1.png",
+        title: "msgmeforpics",
+        desc: "A service which users can receive a photo of their choice via SMS.",
+        link: "https://github.com/alvinwong12/MsgMeForPics-python",
+        github: "https://github.com/alvinwong12/MsgMeForPics-python"
+
+    },
+    project_2: {
+        image: "project_2.png",
+        title: "the lemon law",
+        desc: "A web chat app where two users matched randomly for 5 minutes.",
+        link: "http://thelemonlaw.herokuapp.com",
+        github: "https://github.com/IM-MC/TheLemonLaw"
+
+    },
+    project_3: {
+        image: "project_3.png",
+        title: "hashtag tracker",
+        desc: "A tool use to monitor traffic of a hashtag.",
+        link: "https://github.com/alvinwong12/Hashtag-Tracker",
+        github: "https://github.com/alvinwong12/Hashtag-Tracker"
+    },
+    intro: {
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vestibulum eros eget cursus suscipit. Donec et tristique lacus, eget rutrum metus. Nam ultrices velit ac dui condimentum aliquam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce nec enim finibus, tempor eros non, hendrerit tortor. In blandit sapien est, vel posuere arcu feugiat sit amet. Maecenas ipsum elit, convallis sed elementum at, dapibus vitae purus. Donec eget ex vitae turpis mollis placerat.",
+        image: "http://via.placeholder.com/480"
+    }
+};
+
+module.exports = content;
 
 /***/ })
 /******/ ]);
