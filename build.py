@@ -1,9 +1,23 @@
 import os
 import shutil
+import sys
 
 files = ['js/animate.js', 'css/index.css']
 directories = ['assets/']
 dst = 'build/'
+build_success = True
+
+# clean build folder
+print "Cleaning build folder..."
+built_files = os.listdir(dst)
+for file in built_files:
+    try:
+        os.remove(os.path.join(dst, file))
+    except Exception as e:
+        print str(e)
+        build_success = False
+
+print "Finished cleaning build folder"
 
 for directory in directories:
     try:
@@ -12,6 +26,7 @@ for directory in directories:
     except Exception as e:
         print str(e)
         print "Error: Something went wrong in this directory: '%s'" %directory
+        build_success = False
 
 print "Building %s file(s) ..." %str(len(files))
 for file in files:
@@ -23,5 +38,10 @@ for file in files:
     except Exception as e:
         print str(e)
         print "Error: Cannot finish building %s" %file
-
-print "Finish building %s file(s)" %str(len(files))
+        build_success = False
+        
+if build_success:
+    print "Finish building %s file(s)" %str(len(files))
+    sys.exit(0)
+else:
+    sys.exit("Build not complete due to errors")

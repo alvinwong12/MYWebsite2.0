@@ -15,9 +15,24 @@
 }
 
 .jumbotron{
-    background-image: url("http://via.placeholder.com/1200x900");
+    // background-image: url("http://via.placeholder.com/1200x900");
     height: 45rem;
     background-position: center; 
+    position: relative;
+    background: transparent;
+    padding-top: 0;
+}
+
+.jumbotron-bg{
+    background-image: url("jumbotron_bg_9.jpg");
+    opacity: 0.4;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 0;
 }
 .jumbotron .container{
     padding-top: 12rem;
