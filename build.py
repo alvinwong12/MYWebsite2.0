@@ -2,6 +2,9 @@ import os
 import shutil
 import sys
 
+# used to build all other files not involving react
+# to be ran before before webpack generation but ran after all non-react file generations
+
 files = ['js/animate.js', 'css/index.css']
 directories = ['assets/']
 dst = 'build/'
