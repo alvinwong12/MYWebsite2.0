@@ -4,12 +4,13 @@
   "description": "Alvin's personal website rebuilt",
   "main": "main.js",
   "scripts": {
-    "start": "npm run css && webpack-dev-server --hot --config webpack.config.frontend.js",
+    "start": "node server.js",
     "build": "npm run css && python build.py && webpack --config webpack.config.js",
+    "frontend": "npm run css && webpack-dev-server --hot --config webpack.config.frontend.js",
     "backend": "npm run build && node server.js",
     "css": "sass css/index.scss css/index.css",
-    "deploy staging": "git push staging master -f",
-    "deploy production": "git push production master -f"
+    "deploy-staging": "git push staging master -f",
+    "deploy-production": "git push production master -f"
   },
   "author": "",
   "license": "ISC",
