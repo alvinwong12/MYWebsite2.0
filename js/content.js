@@ -23,7 +23,7 @@ var content = {
         github: "https://github.com/alvinwong12/Hashtag-Tracker"
     },
     intro: {
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vestibulum eros eget cursus suscipit. Donec et tristique lacus, eget rutrum metus. Nam ultrices velit ac dui condimentum aliquam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce nec enim finibus, tempor eros non, hendrerit tortor. In blandit sapien est, vel posuere arcu feugiat sit amet. Maecenas ipsum elit, convallis sed elementum at, dapibus vitae purus. Donec eget ex vitae turpis mollis placerat.",
+        text: "Hey there, this is Alvin. I am a student studying Computer Engineering at University of Waterloo, Canada. I am particularly interested in developing software or embedded applications, and I have had professional experiences as a software developer in various positions. It is also my personal hobby to dabble in communication and social platforms like facebook and snapchat, and some of the applications I have created are listed above. I have learnt to work in a fast paced environment by being flexible and adaptive. Outside of work, I love sports like basketball, badminton, and ice hockey. I also love going to different hackathons to build cool stuff.",
         image: "http://via.placeholder.com/480"
     }
 }
