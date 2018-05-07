@@ -24,7 +24,7 @@ var content = {
     },
     intro: {
         text: "Hey there, this is Alvin. I am a student studying Computer Engineering at University of Waterloo, Canada. I am particularly interested in developing software or embedded applications, and I have had professional experiences as a software developer in various positions. It is also my personal hobby to dabble in communication and social platforms like facebook and snapchat, and some of the applications I have created are listed above. I have learnt to work in a fast paced environment by being flexible and adaptive. Outside of work, I love sports like basketball, badminton, and ice hockey. I also love going to different hackathons to build cool stuff.",
-        image: "http://via.placeholder.com/480"
+        image: "me.jpg"
     }
 }
 

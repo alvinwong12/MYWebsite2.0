@@ -88,6 +88,7 @@
 
 .jumbotron .content {
   color: #f6ae2d;
+  font-weight: 700;
 }
 
 .jumbotron {
@@ -115,7 +116,12 @@
 }
 
 #about .content {
-  padding-top: 7rem;
+  padding-top: 4rem;
+}
+
+.img-circle {
+  width: 350px;
+  height: 350px;
 }
 
 body {
